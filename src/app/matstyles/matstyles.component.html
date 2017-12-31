@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>ToolBar</span>
+
+    <span class="example-spacer"></span>
+    <button mat-button>Home</button>
+    <button mat-button>About</button>
+        <button mat-button>Contact</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<p>
+  <button mat-button><a href="" (click)="sendMeHome()"><strong>Take me Home</strong></a>.</button>
+</p>
+
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="answer" placeholder="Who has the best dev tutorials?">
+  </mat-form-field>
+
+  <br>
+  
+  <button mat-raised-button (click)="showAnswer()">Answer me</button>
+  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card>
+
+
+<mat-card *ngIf="answerDisplay">
+  <h1>{{ answerDisplay }} : Right Answer ,you are awesome </h1>
+</mat-card>
+
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Input">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+ </div>
