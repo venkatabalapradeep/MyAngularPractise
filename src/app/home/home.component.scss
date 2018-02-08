@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50% 50%;
 }
 .col {
     padding: .4em 1.3em;
@@ -14,16 +14,17 @@
 
 input.txt {
     border: 0;
-    padding: 1em;
-    width: 80%;
-    margin-bottom: 2em;
+    padding: 0.5em;
+    width: 60%;
+    background:whitesmoke;
+    margin-bottom: 0.5em;
 }
 input.btn {
     border: 0;
     display:block;
     padding:1em 3em;
     background:#A5F883;
-    color:#003A61;
+    color:rgb(190, 201, 207);
     margin-bottom:1em;
     cursor:pointer;
 }

@@ -1,14 +1,59 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }} Learning
-</h1></div>
-<ul>
+
+<!--<ul>
   <li><a routerLink="">Home</a></li>
   <li><a routerLink="about/49">About</a></li>
   <li><a routerLink="matstyles">NavStyles</a></li>
   <li><a routerLink="contact">contact US</a></li>
-</ul>
+</ul> -->
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-blue scrolling-navbar" [containerInside]="false">
+  <logo>
+      <a class="logo navbar-brand" href="#"><strong>Sai Angular5</strong></a>
+  </logo>
+  <links>
+      <ul class="navbar-nav mr-auto">
+         <!-- <li class="nav-item active waves-light" mdbRippleRadius>
+              <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>-->
+              
+          
+         
+          <li class="nav-item  waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                    <a class="nav-link" routerLink="matstyles">Learning</a>
+                </li>
+          <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="about/49">About</a>
+            </li>
+          <li class="nav-item waves-light" mdbRippleRadius>
+              <a class="nav-link" routerLink="contact">Contacts</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item waves-light" mdbRippleRadius>
+              <a class="nav-link"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="nav-item waves-light" mdbRippleRadius>
+              <a class="nav-link"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="nav-item waves-light" mdbRippleRadius>
+              <a class="nav-link"><i class="fa fa-instagram"></i></a>
+          </li>
+      </ul>
+  </links>
+</mdb-navbar>
+<!-- Main -->
+<main>
+  <div class="container" style="height:auto;">
+    <div style="text-align:center">
+      <h3>
+        <br> 
+        {{ title }} APP
+        <br> 
+    </h3></div>
+</div>
 
+</main>
 <!-- <app-home></app-home> -->
 <router-outlet></router-outlet>

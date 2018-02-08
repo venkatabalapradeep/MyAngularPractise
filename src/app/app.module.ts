@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md'; //For Bootstarp
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; // for adding forms
@@ -21,14 +22,16 @@ import { DataService } from './data.service';
     AboutComponent,
     MatstylesComponent,
     ContactComponent
-  ],
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, // Add the FormsModule here
     BrowserAnimationsModule, // For animations
-    MaterialModule // For adding buttons
+    MaterialModule , // For adding buttons
+    MDBBootstrapModule.forRoot() // For bootstarp4
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [DataService],
   bootstrap: [AppComponent]
 })
